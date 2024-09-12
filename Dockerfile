@@ -14,7 +14,7 @@ WORKDIR /build
 RUN mvn dependency:go-offline
 RUN mvn clean package -DskipTests
 
-# Runtime docker image
+# Runtime image
 
 # JDK for running the application
 FROM openjdk:17-jdk-runtime
